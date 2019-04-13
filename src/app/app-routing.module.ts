@@ -14,7 +14,9 @@ const routes: Routes = [
   {
     path: 'list',
     loadChildren: './list/list.module#ListPageModule'
-  }
+  },
+  { path: 'details/:id', loadChildren: './details/details.module#DetailsPageModule' },
+  { path: 'favourite', loadChildren: './favourite/favourite.module#FavouritePageModule' }
 ];
 
 @NgModule({

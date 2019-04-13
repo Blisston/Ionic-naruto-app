@@ -8,14 +8,16 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
-
+import { DetailsPipe } from './details.pipe';
+import { HttpClientModule } from '@angular/common/http';
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, DetailsPipe],
   entryComponents: [],
   imports: [
     BrowserModule,
     IonicModule.forRoot(),
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [
     StatusBar,

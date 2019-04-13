@@ -1,0 +1,52 @@
+.back-btn
+{
+    font-size: 27px;
+    display: inline-block;
+
+}
+.head
+{
+    display: inline-block;
+}
+.img-container
+{
+    position: absolute;
+    left: 50%;
+    top:17%;
+    transform: translate(-50%,-50%);
+}
+.image {
+    height: 35vw; 
+    width: 35vw; 
+   border: 2px solid #fff;
+   border-radius: 50%;
+   box-shadow: 0 0 5px gray;
+   display: inline-block;
+   margin-left: auto;
+   margin-right: auto;
+  }
+  .details
+  {
+    position: absolute;
+    width: 100%;
+    top:35%;
+  }
+  ion-spinner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  }
+  #tablestyle {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  #tablestyle td, #tablestyle th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  #tablestyle tr:nth-child(even){background-color: #f2f2f2;}
+  

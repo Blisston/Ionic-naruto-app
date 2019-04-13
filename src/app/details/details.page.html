@@ -1,0 +1,61 @@
+<ion-header>
+  <ion-toolbar color="warning">
+    <ion-icon
+      class="back-btn"
+      [routerDirection]="'root'"
+      [routerLink]="'/home'"
+      name="arrow-back"
+    ></ion-icon>
+ 
+    <ion-title class="head">Details</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-spinner *ngIf="!flag" name="crescent"></ion-spinner>
+    <div *ngIf="flag" >
+  <div class="img-container">
+    <img class="image" src="assets/Images/naruto.png" />
+    <h4>{{arr[current].name}}</h4>
+  </div>
+  <div class="details">
+      <table id="tablestyle">
+          <tr>
+            <td>Clan</td>
+            <td>{{arr[current].clan}}</td>
+          
+          </tr>
+          <tr>
+              <td>Village</td>
+              <td>{{arr[current].village}}</td>
+            
+            </tr>
+            <tr>
+                <td>Rank</td>
+                <td><span *ngFor="let i of arr[current].rank ">{{i}}</span></td>
+              
+              </tr>
+              <tr>
+                  <td>Team</td>
+                  <td>{{arr[current].team}}</td>
+                
+                </tr>
+              <tr>
+                  <td>Birthdate</td>
+                  <td>{{arr[current].Birthdate}}</td>
+                
+                </tr>
+                <tr>
+                    <td>Age</td>
+                    <td>{{arr[current].age}}</td>
+                  
+                  </tr>
+                  <tr>
+                      <td>Family</td>
+                      <td><p *ngFor="let i of arr[current].family ">{{i}}</p></td>
+                    
+                    </tr>
+          </table>
+  </div>
+</div>
+</ion-content>
