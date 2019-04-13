@@ -19,9 +19,7 @@
             <ion-select-option  value="Konoha">Leaf</ion-select-option>
             <ion-select-option  value="uchica">Stone</ion-select-option>
           </ion-select>
-      <ion-item-divider>
-        
-        </ion-item-divider>
+   
       <ion-select (ionChange)="filterClan()" [(ngModel)]="searchClan" placeholder="Filter By Clan" okText="Okay" cancelText="Dismiss">
         <ion-select-option  value="uzumaki">Uzumaki</ion-select-option>
         <ion-select-option  value="uchica">Uchica</ion-select-option>
@@ -39,6 +37,7 @@
           ><img class="image" src="assets/Images/naruto.png"
         /></ion-card-subtitle>
         <ion-card-title class="card-name">{{val.name}}</ion-card-title>
+        
       </ion-card-header>
 
       <ion-card-content>

@@ -16,6 +16,8 @@
     <div *ngIf="flag" >
   <div class="img-container">
     <img class="image" src="assets/Images/naruto.png" />
+    <ion-icon *ngIf="!contain()" (click)="addFav()" class="heart" name="heart-empty"></ion-icon>
+        <ion-icon *ngIf="contain()" class="heart"  color="danger" name="heart"></ion-icon>
     <h4>{{arr[current].name}}</h4>
   </div>
   <div class="details">

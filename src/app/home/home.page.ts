@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { DataService } from '../data.service';
 
 @Component({
   selector: 'app-home',
@@ -18,7 +19,6 @@ export class HomePage {
     this.temp = val;
     this.arr = this.temp;
     });
-
   }
   filterItems() {
       this.arr = this.temp;

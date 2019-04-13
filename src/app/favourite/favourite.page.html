@@ -1,9 +1,59 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>favourite</ion-title>
+  <ion-toolbar color="warning">
+      <ion-icon
+      class="back-btn"
+      [routerDirection]="'root'"
+      [routerLink]="'/home'"
+      name="arrow-back"
+    ></ion-icon>
+    <ion-title class="head">Favourite</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
 
+    <div *ngFor="let val of arr;let i=index">
+      <div *ngIf="contains(i)">
+        <ion-card class="card">
+          <ion-card-header class="card-head">
+            <ion-card-subtitle
+              ><img class="image" src="assets/Images/naruto.png"
+            /></ion-card-subtitle>
+            <ion-card-title class="card-name">{{val.name}}</ion-card-title>
+            
+          </ion-card-header>
+    
+          <ion-card-content>
+            <ion-row>
+              <ion-col>
+                <ion-text color="dark">
+                  <p>Clan:</p>
+                </ion-text>
+                {{val.clan}}
+                <br>
+                <ion-text color="dark">
+                    <p>Village:</p>
+                  </ion-text>
+                  {{val.village}}
+              </ion-col>
+    
+              <ion-col>
+                  <ion-text color="dark">
+                    <p>Rank:</p>
+                  </ion-text>
+                  <span *ngFor="let r of val.rank">
+                    {{r}}
+                  </span>
+                  <br>
+                  <ion-text color="dark">
+                      <p>Village:</p>
+                    </ion-text>
+                    Konaha
+                </ion-col>
+      
+            </ion-row>
+          </ion-card-content>
+        </ion-card>
+        </div>
+        </div>
 </ion-content>
