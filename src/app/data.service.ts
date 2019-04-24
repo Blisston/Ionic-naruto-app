@@ -15,7 +15,6 @@ export class DataService {
   }
   getElements() {
     this.storage.get('fav').then(val => {
-      console.log(val);
       if (val === null) {
         this.favx = [];
       } else {
@@ -23,7 +22,7 @@ export class DataService {
         this.dataChanged();
       }
     }, (ful) => {
-      console.log(ful);
+      
     }
     );
     return this.favx.slice();

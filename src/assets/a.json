@@ -1,0 +1,24 @@
+[
+    {
+        "type":"character",
+        "name":"Naruto Uzumaki",
+        "clan":"Uzumaki",
+        "village":"Konoha",
+        "rank":["Genin,","Hokage"],
+        "team":"Team Kakashi",
+        "Birthdate":"October 10",
+        "Classification":["Jinchūriki",
+            "Sage",
+            "Sensor Type"],
+            "Occupation":"Hokage",
+        "age":	"12-17",
+        "family":["Minato Namikaze (Father)",
+        "Kushina Uzumaki (Mother)",
+        "Boruto Uzumaki (Son)",
+        "Himawari Uzumaki (Daughter)",
+        "Hinata Uzumaki (Wife)",
+        "Jiraiya (Godfather)"]
+       
+        }
+    
+]

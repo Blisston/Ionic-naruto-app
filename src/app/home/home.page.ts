@@ -16,6 +16,7 @@ export class HomePage {
   filter = false;
   constructor(private http: HttpClient) {
     this.http.get('assets/characters.json').subscribe( (val) => {
+      console.log(val);
     this.temp = val;
     this.arr = this.temp;
     });
